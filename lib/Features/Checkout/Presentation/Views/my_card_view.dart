@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:payment_app/core/utils/styles.dart';
+import 'package:payment_app/Features/Checkout/Presentation/Views/widgets/custom_appbar.dart';
+import 'package:payment_app/Features/Checkout/Presentation/Views/widgets/my_card_view_body.dart';
 
 class MyCardView extends StatelessWidget {
   const MyCardView({super.key});
@@ -7,13 +8,8 @@ class MyCardView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text(
-          'My Cart',
-          textAlign: TextAlign.center,
-          style: Styles.style25,
-        ),
-      ),
+      appBar: buildAppBar(title: 'My Card'),
+      body: MyCardViewBody(),
     );
   }
 }
