@@ -25,7 +25,7 @@ class _PaymentMethodsListViewState extends State<PaymentMethodsListView> {
         itemBuilder: (context, index) {
           return Padding(
             //edit here if going to add more payment methods
-            padding: const EdgeInsets.only(left: 70),
+            padding: const EdgeInsets.symmetric(horizontal: 40),
             child: GestureDetector(
               onTap: () {
                 activeIndex = index;
