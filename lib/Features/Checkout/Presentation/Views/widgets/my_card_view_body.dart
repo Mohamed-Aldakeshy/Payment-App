@@ -66,7 +66,7 @@ class MyCardViewBody extends StatelessWidget {
                     borderRadius: BorderRadius.circular(16),
                   ),
                   builder: (context) {
-                    return PaymentMethodsBottomSheet();
+                    return const PaymentMethodsBottomSheet();
                   },
                 );
               }),

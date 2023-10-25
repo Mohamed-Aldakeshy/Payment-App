@@ -16,14 +16,15 @@ class PaymentMethodeContainer extends StatelessWidget {
       decoration: ShapeDecoration(
         shape: RoundedRectangleBorder(
           side: BorderSide(
-              width: 1.50, color: isActive ? Color(0xFF34A853) : Colors.grey),
+              width: 1.50,
+              color: isActive ? const Color(0xFF34A853) : Colors.grey),
           borderRadius: BorderRadius.circular(15),
         ),
         shadows: [
           BoxShadow(
-            color: isActive ? Color(0xFF34A853) : Colors.white,
+            color: isActive ? const Color(0xFF34A853) : Colors.white,
             blurRadius: 4,
-            offset: Offset(0, 0),
+            offset: const Offset(0, 0),
             spreadRadius: 0,
           )
         ],

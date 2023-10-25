@@ -15,7 +15,7 @@ class ThankYouCard extends StatelessWidget {
     return Container(
       width: double.infinity,
       decoration: ShapeDecoration(
-        color: Color(0xFFD9D9D9),
+        color: const Color(0xFFD9D9D9),
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(20),
         ),
@@ -24,12 +24,12 @@ class ThankYouCard extends StatelessWidget {
         padding: const EdgeInsets.only(top: 50 + 16, left: 22, right: 22),
         child: Column(
           children: [
-            Text(
+            const Text(
               'Thank you!',
               textAlign: TextAlign.center,
               style: Styles.style25,
             ),
-            SizedBox(
+            const SizedBox(
               height: 2,
             ),
             Text(
@@ -40,21 +40,21 @@ class ThankYouCard extends StatelessWidget {
             const SizedBox(
               height: 42,
             ),
-            PaymentItemInfo(
+            const PaymentItemInfo(
               title: 'Date',
               value: '01/24/2023',
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
-            PaymentItemInfo(
+            const PaymentItemInfo(
               title: 'Time',
               value: '10:15 AM',
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
-            PaymentItemInfo(
+            const PaymentItemInfo(
               title: 'To',
               value: 'Sam Louis',
             ),
@@ -62,15 +62,15 @@ class ThankYouCard extends StatelessWidget {
               thickness: 2,
               height: 60,
             ),
-            TotalPrice(
+            const TotalPrice(
               title: 'Total',
               value: r'$50.97',
             ),
-            SizedBox(
+            const SizedBox(
               height: 30,
             ),
-            CardInfoWidget(),
-            Spacer(),
+            const CardInfoWidget(),
+            const Spacer(),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
@@ -80,15 +80,16 @@ class ThankYouCard extends StatelessWidget {
                   height: 58,
                   decoration: ShapeDecoration(
                     shape: RoundedRectangleBorder(
-                      side: BorderSide(width: 1.50, color: Color(0xFF34A853)),
+                      side: const BorderSide(
+                          width: 1.50, color: Color(0xFF34A853)),
                       borderRadius: BorderRadius.circular(15),
                     ),
                   ),
                   child: Center(
                     child: Text('PAID',
                         textAlign: TextAlign.center,
-                        style:
-                            Styles.style24.copyWith(color: Color(0xff34A853))),
+                        style: Styles.style24
+                            .copyWith(color: const Color(0xff34A853))),
                   ),
                 ),
               ],

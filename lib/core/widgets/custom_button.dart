@@ -17,14 +17,14 @@ class CustomButton extends StatelessWidget {
       child: Container(
         width: double.infinity,
         height: 73,
-        child: Center(
-          child: Text(text, textAlign: TextAlign.center, style: Styles.style22),
-        ),
         decoration: ShapeDecoration(
-          color: Color(0xFF34A853),
+          color: const Color(0xFF34A853),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(15),
           ),
+        ),
+        child: Center(
+          child: Text(text, textAlign: TextAlign.center, style: Styles.style22),
         ),
       ),
     );

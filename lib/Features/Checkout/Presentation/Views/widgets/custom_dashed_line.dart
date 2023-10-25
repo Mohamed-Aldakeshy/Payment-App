@@ -14,7 +14,7 @@ class CustomDashedLine extends StatelessWidget {
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 2),
             child: Container(
-              color: Color(0xffB8B8B8),
+              color: const Color(0xffB8B8B8),
               height: 2,
             ),
           ),

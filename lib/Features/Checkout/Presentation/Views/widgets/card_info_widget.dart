@@ -25,7 +25,7 @@ class CardInfoWidget extends StatelessWidget {
             SvgPicture.asset(
               'assets/images/master_card_logo.svg',
             ),
-            SizedBox(
+            const SizedBox(
               width: 23,
             ),
             Padding(
@@ -33,7 +33,7 @@ class CardInfoWidget extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Text(
+                  const Text(
                     'Credit Card',
                     style: Styles.style18,
                   ),

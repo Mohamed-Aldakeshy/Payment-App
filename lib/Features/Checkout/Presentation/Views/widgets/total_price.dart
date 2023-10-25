@@ -13,7 +13,7 @@ class TotalPrice extends StatelessWidget {
           textAlign: TextAlign.center,
           style: Styles.style24,
         ),
-        Spacer(),
+        const Spacer(),
         Text(
           value,
           textAlign: TextAlign.center,

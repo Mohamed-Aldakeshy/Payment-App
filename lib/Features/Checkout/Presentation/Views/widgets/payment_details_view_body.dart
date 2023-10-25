@@ -22,7 +22,7 @@ class _PaymentDestailsViewBodyState extends State<PaymentDestailsViewBody> {
     return CustomScrollView(
       physics: const BouncingScrollPhysics(),
       slivers: [
-        SliverToBoxAdapter(
+        const SliverToBoxAdapter(
           child: PaymentMethodsListView(),
         ),
         SliverToBoxAdapter(
@@ -36,7 +36,7 @@ class _PaymentDestailsViewBodyState extends State<PaymentDestailsViewBody> {
           child: Align(
             alignment: Alignment.bottomCenter,
             child: Padding(
-              padding: EdgeInsets.only(bottom: 32, left: 16, right: 16),
+              padding: const EdgeInsets.only(bottom: 32, left: 16, right: 16),
               child: CustomButton(
                 text: 'Pay',
                 onTap: () {
@@ -47,7 +47,7 @@ class _PaymentDestailsViewBodyState extends State<PaymentDestailsViewBody> {
                     Navigator.of(context).push(
                       MaterialPageRoute(
                         builder: (context) {
-                          return ThankYouView();
+                          return const ThankYouView();
                         },
                       ),
                     );
