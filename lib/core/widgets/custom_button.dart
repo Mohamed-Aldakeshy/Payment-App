@@ -6,10 +6,12 @@ class CustomButton extends StatelessWidget {
     super.key,
     this.onTap,
     required this.text,
+    this.isLoading = false,
   });
 
   final void Function()? onTap;
   final String text;
+  final bool isLoading;
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -24,7 +26,9 @@ class CustomButton extends StatelessWidget {
           ),
         ),
         child: Center(
-          child: Text(text, textAlign: TextAlign.center, style: Styles.style22),
+          child: isLoading
+              ? const CircularProgressIndicator()
+              : Text(text, textAlign: TextAlign.center, style: Styles.style22),
         ),
       ),
     );
